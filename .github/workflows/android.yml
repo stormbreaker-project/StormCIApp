@@ -1,8 +1,8 @@
 name: "Android CI"
 
 on:
-  push:
-    branches: [ master ]
+  pull_request:
+    types: [opened, synchronize, edited]
 
 jobs:
   build:
